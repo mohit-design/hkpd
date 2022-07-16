@@ -1,0 +1,96 @@
+@media only screen and (max-width: 575px) {
+
+/*------- Common CSS Starts -------*/
+
+p { font-size: 1rem; }
+.d-block-mobile { display: block; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Coming Soon Page Starts -------*/
+
+.bg-coming-soon { display: block; height: auto; }
+.box-coming-soon-info > p { font-size: 1.4rem; }
+.box-coming-soon-info > h1 { font-size: 1.8rem; padding: 0 15px; }
+.box-coming-soon-info > h4,
+.coming-soon-box-contact-info-heading > h5,
+.coming-soon-form { padding: 0 15px; }
+.box-coming-soon-info > h4 { font-size: 1.2rem; }
+.coming-soon-box-contact-info { padding: 30px 15px; }
+.coming-soon-box-contact-info-heading > h2 { font-size: 1.8rem; }
+.coming-soon-box-contact-info-heading > h5 { font-size: 1rem; }
+.download-listing-cs-1 > li,
+.download-listing-cs-2 > li { margin: 0 0 10px 0; }
+.download-listing-cs-1 > li > a,
+.download-listing-cs-2 > li > a { display: block; padding: 15px; }
+
+/*------- Coming Soon Page Ends -------*/
+  
+}
+  
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  
+/*------- Common CSS Starts -------*/
+
+.d-block-mobile { display: block; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Coming Soon Page Starts -------*/
+
+.bg-coming-soon { display: block; height: auto; }
+.box-coming-soon-info > p { font-size: 1.4rem; }
+.box-coming-soon-info > h1 { font-size: 1.8rem; padding: 0 15px; }
+.box-coming-soon-info > h4,
+.coming-soon-box-contact-info-heading > h5,
+.coming-soon-form { padding: 0 15px; }
+.box-coming-soon-info > h4 { font-size: 1.2rem; }
+.coming-soon-box-contact-info { padding: 30px 15px; }
+.coming-soon-box-contact-info-heading > h2 { font-size: 1.8rem; }
+.coming-soon-box-contact-info-heading > h5 { font-size: 1rem; }
+.download-listing-cs-1 > li,
+.download-listing-cs-2 > li { margin: 0 0 10px 0; }
+.download-listing-cs-1 > li > a,
+.download-listing-cs-2 > li > a { display: block; padding: 15px; }
+
+/*------- Coming Soon Page Ends -------*/
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*------- Coming Soon Page Starts -------*/
+
+.bg-coming-soon { display: block; height: auto; }
+.box-coming-soon-info > p { font-size: 2rem; }
+.box-coming-soon-info > h1 { font-size: 2.4rem; padding: 0 15px; }
+.box-coming-soon-info > h4,
+.coming-soon-box-contact-info-heading > h5,
+.coming-soon-form { padding: 0 15px; }
+.coming-soon-box-contact-info { padding: 30px 15px; }
+
+/*------- Coming Soon Page Ends -------*/
+  
+}
+  
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+/*------- Coming Soon Page Starts -------*/
+
+.box-coming-soon-info > p { font-size: 2rem; }
+.box-coming-soon-info > h1 { font-size: 2.4rem; padding: 0 15px; }
+.box-coming-soon-info > h4,
+.coming-soon-box-contact-info-heading > h5,
+.coming-soon-form { padding: 0 15px; }
+.coming-soon-box-contact-info { padding: 30px 15px; }
+.download-listing-cs-1,
+.download-listing-cs-2 { display: block; }
+.download-listing-cs-1 > li { margin-bottom: 15px; }
+.download-listing-cs-1 > li,
+.download-listing-cs-2 > li { margin: 0 0 10px 0; }
+.download-listing-cs-1 > li > a,
+.download-listing-cs-2 > li > a { display: block; padding: 15px; }
+
+/*------- Coming Soon Page Ends -------*/
+  
+}

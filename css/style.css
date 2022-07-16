@@ -1,0 +1,200 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Raleway-Light"; src: url("../fonts/Raleway-Light.ttf"); }
+@font-face { font-family: "Raleway-Regular"; src: url("../fonts/Raleway-Regular.ttf"); }
+@font-face { font-family: "Raleway-Medium"; src: url("../fonts/Raleway-Medium.ttf"); }
+@font-face { font-family: "Raleway-SemiBold"; src: url("../fonts/Raleway-SemiBold.ttf"); }
+@font-face { font-family: "Raleway-Bold"; src: url("../fonts/Raleway-Bold.ttf"); }
+@font-face { font-family: "Raleway-Black"; src: url("../fonts/Raleway-Black.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 1px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+:root { scroll-behavior: auto; }
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+figure { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 50px; }
+.section-heading > h2 { color: #4caf50; font: 3rem/1.1 "Raleway-Bold"; text-transform: uppercase; }
+.section-heading > h2 > span { color: #000000; display: block; font-family: "Raleway-Light"; }
+.section-heading > h4 { color: #000000; font: 1.8rem/1.2 "Raleway-Bold"; text-transform: uppercase; }
+p { font: 1rem/1.5 "Raleway-Light"; text-align: justify; }
+.read-more > a { border: 1px solid #4caf50; -webkit-border-radius: 24px; -moz-border-radius: 24px; -ms-border-radius: 24px; -o-border-radius: 24px; border-radius: 24px; color: #4caf50; font: 1rem/1 "Raleway-SemiBold"; padding: 10px 25px; text-align: center; text-transform: uppercase; }
+.read-more > a:hover { background-color: #4caf50; color: #ffffff; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+	/*------- Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop { background-color: #ffffff; display: block; left: 0; padding: 15px 30px; position: -webkit-sticky; position: sticky; top: 0; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; z-index: 11; }
+.header-logo-desktop > a { display: inline-block; }
+.header-logo-desktop > a > img { width: 120px; }
+.header-logo-desktop > a > p { color: #272727; font: 1.8rem/1.2 "Raleway-Black"; letter-spacing: 0.5px; text-transform: uppercase; }
+.header-logo-desktop > a > p > span { color: #4caf50; }
+.header-logo-desktop > a > p > span:nth-child(2) { color: #009688; }
+.header-logo-desktop > a > p > span:last-child { color: #fcd55c; }
+.menu-listing-desktop { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: flex-end; }
+.menu-listing-desktop > li { display: inline-block; margin-right: 40px; }
+.menu-listing-desktop > li:last-child { margin-right: 0; }
+.menu-listing-desktop > li > a { color: #272727; display: block; font: 1rem/1.2 "Raleway-Medium"; text-transform: uppercase; }
+.menu-listing-desktop > li.active > a,
+.menu-listing-desktop > li > a:hover { color: #4caf50; }
+
+	/*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+	/*------- Slider Section Starts -------*/
+
+.bg-slider { background: url("../images/banner.jpg") no-repeat top/cover; height: calc(100vh - 65px); padding: 0; position: relative; z-index: 1; }
+.slider-shape { position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); z-index: -1; }
+.slider-shape > img { width: 600px; }
+.box-banner-slider { height: calc(100vh - 65px); position: relative; z-index: 1; }
+.box-banner-slider-info,
+.box-banner-slider-image { left: 50px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); }
+.box-banner-slider-image > img { width: 90%; }
+.box-banner-slider-info > p { color: #ffffff; font-size: 1.2rem; letter-spacing: 4px; margin-bottom: 5px; text-transform: uppercase; }
+.box-banner-slider-info > h2 { color: #fcd55c; font: 2.7rem/1.1 "Raleway-SemiBold"; text-transform: uppercase; }
+.box-banner-slider-info > h2 > span { display: block; }
+.box-banner-slider-image { left: auto; right: 50px; }
+
+		/*------- Slick Slider CSS Starts -------*/
+
+.banner-slider .slick-dots { bottom: 50px; left: 100px; text-align: left; width: auto; }
+.banner-slider .slick-dots li {
+	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	margin: 0 5px;
+	padding: 0;
+	position: relative;
+	width: auto;
+}
+.banner-slider .slick-dots li a { background-color: #ffffff; -webkit-border-radius: 40px/120px; -moz-border-radius: 40px/120px; -ms-border-radius: 40px/120px; -o-border-radius: 40px/120px; border-radius: 40px/120px; color: #000000; display: block; font-family: "Raleway-Medium"; height: 40px; line-height: 40px; text-align: center; width: 40px; }
+.banner-slider .slick-dots li.slick-active a,
+.banner-slider .slick-dots li a:hover { background-color: #fcd55c; }
+
+		/*------- Slick Slider CSS Ends -------*/
+
+	/*------- Slider Section Ends -------*/
+
+	/*------- Text and With Background Image Section Starts -------*/
+
+.text-with-bg > p {
+	animation: masked-animation 10s infinite;
+	-webkit-animation: masked-animation 10s infinite;
+	background: url("../images/text-with-bg.jpg") no-repeat 50% 50%/cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	font: 6rem/1 "Raleway-Black";
+	text-align: center;
+	text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+}
+@-webkit-keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+@-moz-keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+@-ms-keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+@-o-keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+@keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+.text-with-bg > p > span { display: block; }
+
+	/*------- Text and With Background Image Section Ends -------*/
+
+	/*------- About Section Starts -------*/
+
+.bg-about { position: relative; }
+.about-text { left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); z-index: -1; }
+.about-text > p { color: rgb(76 175 80 / 10%); font: 20rem/1 "Raleway-Black"; letter-spacing: 40px; text-align: center; text-transform: uppercase; }
+.about-heading > h2 { margin-bottom: 50px; }
+.about-desc > p { margin-bottom: 15px; }
+.about-desc > p:last-child { margin-bottom: 0; }
+.vision-mission-info { margin: 100px 0 0; }
+.vision-mission-info > h4 { margin-bottom: 15px; }
+.vision-mission-info > p { padding-right: 30px; }
+
+	/*------- About Section Ends -------*/
+
+	/*------- Products Section Starts -------*/
+
+.bg-products { padding: 0; }
+.bg-products > .row { margin: 0; }
+.bg-products > .row > [class*=col-] { padding: 0; }
+.product-section-heading > h2 { margin: 50px 0; }
+.figure-product { cursor: pointer; overflow: hidden; position: relative; }
+.figure-product > img { height: 350px; object-fit: cover; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; }
+.figcaption-product { left: 50%; opacity: 0; position: absolute; top: 55%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; visibility: hidden; width: 100%; z-index: 1; }
+.figcaption-product > h5 { color: #ffffff; font: 1.4rem/1 "Raleway-SemiBold"; text-align: center; text-transform: uppercase; }
+.figure-product:hover > img { -webkit-filter: brightness(0.25); filter: brightness(0.25); }
+.figure-product:hover .figcaption-product { opacity: 1; top: 50%; visibility: visible; }
+
+	/*------- Products Section Ends -------*/
+
+	/*------- Footer Section Starts -------*/
+
+.bg-footer { background: url("../images/bg-footer.jpg") no-repeat top/cover; }
+.footer-logo > a { display: inline-block; }
+.footer-logo > a > p { background-color: #000000; font: 1.8rem/1 "Raleway-Black"; margin-bottom: 30px; padding: 7px 10px 5px; text-transform: uppercase; }
+.footer-logo > a > p > span { color: #4caf50; }
+.footer-logo > a > p > span:nth-child(2) { color: #009688; }
+.footer-logo > a > p > span:last-child { color: #fcd55c; }
+.footer-contact-listing > li { height: 40px; margin-bottom: 15px; padding: 0 40px 0 55px; position: relative; }
+.footer-contact-listing > li:last-child { margin-bottom: 0; }
+.footer-contact-listing > li > address > p,
+.footer-contact-listing > li > a { color: #ffffff; display: block; font: 1rem/1.5 "Raleway-Regular"; }
+.footer-contact-listing > li:last-child > a { padding-top: 10px; }
+.footer-contact-listing > li:first-child::before,
+.footer-contact-listing > li:nth-child(2)::before,
+.footer-contact-listing > li:nth-child(3)::before { background-color: #4caf50; -webkit-border-radius: 40px/120px; -moz-border-radius: 40px/120px; -ms-border-radius: 40px/120px; -o-border-radius: 40px/120px; border-radius: 40px/120px; color: #ffffff; content: "\f3c5"; display: block; font-family: "Font Awesome 5 Free"; font-size: 1rem; font-weight: 900; height: 40px; left: 0; line-height: 40px; position: absolute; text-align: center; top: 3px; width: 40px; }
+.footer-contact-listing > li:nth-child(2)::before { content: "\f879"; }
+.footer-contact-listing > li:nth-child(3)::before { content: "\f0e0"; }
+.footer-contact-listing > li > a:hover { color: #fcd55c; }
+.footer-heading > h4 { color: #ffffff; font: 1.8rem/1 "Raleway-SemiBold"; margin-bottom: 30px; }
+.footer-menu-listing > li { margin-bottom: 10px; }
+.footer-menu-listing > li:last-child { margin-bottom: 0; }
+.footer-menu-listing > li > a { color: #ffffff; font: 1rem/1 "Raleway-Regular"; }
+.footer-menu-listing > li > a:hover { color: #fcd55c; }
+.footer-social-listing { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.footer-social-listing > li { margin-right: 20px; }
+.footer-social-listing > li > a { color: #ffffff; font-size: 1.4rem; }
+.footer-social-listing > li > a:hover { color: #fcd55c; }
+.copyright-info { margin: 50px 0 0; }
+.copyright-info > p { background-color: rgb(139 195 74 / 28%); color: #ffffff; padding: 10px 0; text-align: center; }
+.copyright-info > p > a { color: #fcd55c; }
+
+	/*------- Footer Section Ends -------*/
+
+/*------- Home Page Ends -------*/
