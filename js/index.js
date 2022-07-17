@@ -39,4 +39,12 @@ $(function() {
 		var realFixedMenu = realMenu + "h";
 		$("#" + realFixedMenu).trigger("click");
 	});
+  // OnScroll Navbar Fixed
+	$(window).scroll(function(){
+	  if ($(window).scrollTop() >= 100) {
+	    $(".bg-logo-navbar-menu-desktop").addClass("active");
+	   } else {
+	    $(".bg-logo-navbar-menu-desktop").removeClass(".active");
+	   }
+	});
 });
