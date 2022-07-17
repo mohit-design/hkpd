@@ -47,6 +47,7 @@ p { font: 1rem/1.5 "Raleway-Light"; text-align: justify; }
 	/*------- Desktop Logo and Navbar Menu Section Starts -------*/
 
 .bg-logo-navbar-menu-desktop { background-color: #ffffff; display: block; left: 0; padding: 15px 30px; position: -webkit-sticky; position: sticky; top: 0; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; z-index: 11; }
+.bg-logo-navbar-menu-desktop.active { box-shadow: rgb(35 31 32 / 9%) 0px 5px 12px 1px; }
 .header-logo-desktop > a { display: inline-block; }
 .header-logo-desktop > a > img { width: 120px; }
 .header-logo-desktop > a > p { color: #272727; font: 1.8rem/1.2 "Raleway-Black"; letter-spacing: 0.5px; text-transform: uppercase; }
@@ -142,11 +143,24 @@ p { font: 1rem/1.5 "Raleway-Light"; text-align: justify; }
 .about-heading > h2 { margin-bottom: 50px; }
 .about-desc > p { margin-bottom: 15px; }
 .about-desc > p:last-child { margin-bottom: 0; }
-.vision-mission-info { margin: 100px 0 0; }
+.about-extra-desc > p { margin-bottom: 30px; }
+.about-extra-desc > p > span { font-family: "Raleway-Medium"; }
+.about-extra-desc > p:last-child { margin-bottom: 0; }
+.vision-mission-info { margin: 50px 0 0; }
 .vision-mission-info > h4 { margin-bottom: 15px; }
 .vision-mission-info > p { padding-right: 30px; }
 
 	/*------- About Section Ends -------*/
+
+	/*------- Mission Section Starts -------*/
+
+.bg-mission { padding: 0 50px; }
+.mission-golden-bird-section-heading > h4 { margin-bottom: 15px; }
+.mission-golden-bird-section-heading > h4 > span { color: #4caf50; }
+.mission-info > p { margin-bottom: 15px; }
+.mission-info > p:last-child { margin-bottom: 15px; }
+
+	/*------- Mission Section Ends -------*/
 
 	/*------- Products Section Starts -------*/
 
@@ -156,8 +170,9 @@ p { font: 1rem/1.5 "Raleway-Light"; text-align: justify; }
 .product-section-heading > h2 { margin: 50px 0; }
 .figure-product { cursor: pointer; overflow: hidden; position: relative; }
 .figure-product > img { height: 350px; object-fit: cover; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; }
-.figcaption-product { left: 50%; opacity: 0; position: absolute; top: 55%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; visibility: hidden; width: 100%; z-index: 1; }
-.figcaption-product > h5 { color: #ffffff; font: 1.4rem/1 "Raleway-SemiBold"; text-align: center; text-transform: uppercase; }
+.figcaption-product { left: 50%; opacity: 0; padding: 15px; position: absolute; top: 55%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; visibility: hidden; width: 100%; z-index: 1; }
+.figcaption-product > h5 { color: #ffffff; font: 1.4rem/1 "Raleway-SemiBold"; margin-bottom: 15px; text-transform: uppercase; }
+.figcaption-product > p { color: #ffffff; margin-bottom: 30px; }
 .figure-product:hover > img { -webkit-filter: brightness(0.25); filter: brightness(0.25); }
 .figure-product:hover .figcaption-product { opacity: 1; top: 50%; visibility: visible; }
 
